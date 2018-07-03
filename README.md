@@ -30,11 +30,11 @@ Add a callback parameter to your function. Example:
   };
 ```
 
-Add a callback parameter to your AJAX callback function. Example:
+Add and execute the callback parameter in your AJAX callback function. Example:
 ```JS
   self.OnFunctionResult = function(buttonCallback) {
     //Pretend this is some AJAX callback
-    buttonCallback(true, true);
+    buttonCallback(false, true); //error, repeatable
   };
 ```
 
